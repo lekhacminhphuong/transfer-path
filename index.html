@@ -1,12 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Transfer Path</title>
 </head>
+
 <body>
-    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="sankey_multiple" style="width: max-width; height: max-height;"></div>
+
+
+
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <!--end bootstrp scripts-->
+
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["sankey"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = new google.visualization.DataTable();
+            var x = "test";
+            data.addColumn('string', 'From');
+            data.addColumn('string', 'To');
+            data.addColumn('number', 'Weight');
+            // Class List Tooltip
+            data.addColumn({ type: 'string', role: 'tooltip' });
+            data.addRows([
+                ['SCC', 'Informatics', 3, x],
+                ['SCC', 'Computer Science', 2, 'Class: CSC142, STAT146, MATH152'],
+                ['SCC', 'Foster', 2, 'Class: CSC142, STAT146, MATH152'],
+                ['SCC', 'Math', 2, 'Class: CSC142, STAT146, MATH152'],
+                ['SCC', 'Chemistry', 2, 'Class: CSC142, STAT146, MATH152'],
+                ['Informatics', 'UX Desginer', 1, 'Class: CSC142, STAT146, MATH152'],
+                ['Informatics', 'Data Analyst', 1, 'Class: CSC142, STAT146, MATH152'],
+                ['Informatics', 'Project Manager', 1, 'Class: CSC142, STAT146, MATH152'],
+                ['Computer Science', 'Software Engineer', 1, 'Class: CSC142, STAT146, MATH152'],
+                ['Computer Science', 'Data Scienctist', 1, 'Class: CSC142, STAT146, MATH152'],
+                ['Foster', "Accountant", 1, 'Class: CSC142, STAT146, MATH152'],
+                ['Foster', "Maketing Manager", 1, 'Class: CSC142, STAT146, MATH152'],
+                ['Math', 'Math Researcher', 1, 'Class: CSC142, STAT146, MATH152'],
+                ['Math', 'Math Professor', 1, 'Class: CSC142, STAT146, MATH152'],
+                ['Chemistry', 'Chemistry Researcher', 1, 'Class: CSC142, STAT146, MATH152'],
+                ['Chemistry', 'Chemistry Professor', 1, 'Class: CSC142, STAT146, MATH152']
+            ]);
+            // Set Chart Color
+            var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
+                '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
+            // Set chart options
+            var options = {
+                height: 700,
+                sankey: {
+                    node: {
+                        width: 20,
+                        colors: colors,
+                        label: {
+                            color: colors,
+                            fontSize: 15,
+                            bold: true
+                        }
+                    },
+                    link: {
+                        colorMode: 'gradient',
+                        colors: colors
+                    }
+                }
+            };
+            // Instantiate and draw our chart, passing in some options.
+            var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+            chart.draw(data, options);
+        }
+    </script>
 </body>
+
 </html>
