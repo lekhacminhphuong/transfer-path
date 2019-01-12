@@ -1,0 +1,16 @@
+.uw-purple{
+    background-color: rgb(51,0, 111);
+    color: white;
+}
+
+.highlight{
+    color: rgb(232,211,162);
+}
+
+.nav-link-color{
+    color: white !important;
+}
+ 
+body{
+    background-color: #fafafa;
+} 
