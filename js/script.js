@@ -8,6 +8,7 @@ google.charts.load("current", { packages: ["sankey"] });
             data.addColumn('number', 'Weight');
             // Class List Tooltip
             data.addColumn({ type: 'string', role: 'tooltip' });
+
             data.addRows([
                 ['SCC', 'Informatics', 3, x],
                 ['SCC', 'Computer Science', 2, 'Class: CSC142, STAT146, MATH152'],
@@ -17,7 +18,7 @@ google.charts.load("current", { packages: ["sankey"] });
                 ['Informatics', 'UX Desginer', 1, 'Class: CSC142, STAT146, MATH152'],
                 ['Informatics', 'Data Analyst', 1, 'Class: CSC142, STAT146, MATH152'],
                 ['Informatics', 'Project Manager', 1, 'Class: CSC142, STAT146, MATH152'],
-                ['Computer Science', 'Software Engineer', 1, 'Class: CSC142, STAT146, MATH152'],
+                ['Computer Science', 'Software Engineer', 1, 'Class: MATH 124, MATH 125, MATH 126, PHYSICS 121, CSE 142, CSE 143, CHEM 142 or 145'],
                 ['Computer Science', 'Data Scienctist', 1, 'Class: CSC142, STAT146, MATH152'],
                 ['Foster', "Accountant", 1, 'Class: CSC142, STAT146, MATH152'],
                 ['Foster', "Maketing Manager", 1, 'Class: CSC142, STAT146, MATH152'],
@@ -26,7 +27,7 @@ google.charts.load("current", { packages: ["sankey"] });
                 ['Chemistry', 'Chemistry Researcher', 1, 'Class: CSC142, STAT146, MATH152'],
                 ['Chemistry', 'Chemistry Professor', 1, 'Class: CSC142, STAT146, MATH152']
             ]);
-            // Set Chart Color
+           // Set Chart Color
             var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
                 '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
             // Set chart options
