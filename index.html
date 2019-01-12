@@ -1,12 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Transfer Path</title>
-</head>
+<html>
 <body>
-    
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    // data.addColumn({'type': 'string', 'role' : 'tooltip', 'p':{'html':true}});
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    // A column for custom tooltip content
+    dataTable.addColumn({type: 'string', role: 'tooltip'});
+    data.addRows([
+       [ 'SCC', 'Informatics', 3],
+       [ 'SCC', 'Computer Science', 2 ],
+       [ 'SCC', 'Foster', 1 ],
+       [ 'SCC', 'Math', 2 ],
+       [ 'Informatics', 'UX Desginer', 1 ],
+       [ 'Informatics', 'Data Analyst', 1 ],
+       [ 'Informatics', 'Project Manager', 1], 
+       [ 'Computer Science', 'Software Engineer', 1 ],
+       [ 'Computer Science', 'Data Scienctist', 1 ],
+       [ 'Foster', "dw", 1],
+       [ 'Math', 'dsadas', 1 ],
+       [ 'Math', 'Spain', 1 ]
+    ]);
+
+    data.addColumn()
+
+    // Set chart options
+    var options = {
+      width: 600,
+    };
+
+    // Set Color
+    var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
+                  '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
+
+    var options = {
+      height: 400,
+      tooltip: {isHtml: true},
+      sankey: {
+        node: {
+          colors: colors
+        },
+        link: {
+          colorMode: 'gradient',
+          colors: colors
+        }
+      }
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
 </body>
 </html>
