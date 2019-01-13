@@ -59,6 +59,54 @@ const chem =
         },
         {
             "name": "English Composition",
-            "courses": ["PHYS121, 122 or PHYS114, 115 (8 credits)"]
+            "courses": ["PHYS121, 122 or PHYS114, 115"]
+        }
+    ]
+
+const uxDesigner =
+    [
+        {
+            "name": "Design Methods",
+            "courses": ["  "]
+        },
+        {
+            "name": "User Testing",
+            "courses": ["  "]
+        },
+        {
+            "name": "User Research",
+            "courses": ["  "]
+        },
+        {
+            "name": "Communication",
+            "courses": ["  "]
+        }
+    ]
+
+const dataScientist =
+     [
+        {
+            "name": "Programming",
+            "courses": ["  "]
+        },
+        {
+            "name": "Statistics",
+            "courses": ["  "]
+        },
+        {
+            "name": "Math",
+            "courses": ["  "]
+        },
+        {
+            "name": "Visualization",
+            "courses": ["  "]
+        }
+    ]
+
+const projectManager =
+    [
+        {
+        "name": "Project Manager",
+        "courses:": ["Leadership, Empathy, Communication, Planning, Problem Solving"]
         }
     ]
