@@ -67,7 +67,7 @@ const uxDesigner =
     [
         {
         "name": "UX Designer",
-        "Skills:": ["Design methods/paradigms, User testing, User research, Communication"]
+        "courses:": ["Design methods/paradigms, User testing, User research, Communication"]
         }
     ]
 
@@ -75,6 +75,14 @@ const dataScientist =
     [
         {
         "name": "Data Scientist",
-        "Skills:": ["Programming, Statistics, Math, Visualization, Communication"]
+        "courses:": ["Programming, Statistics, Math, Visualization, Communication"]
+        }
+    ]
+
+const projectManager =
+    [
+        {
+        "name": "Project Manager",
+        "courses:": ["Leadership, Empathy, Communication, Planning, Problem Solving"]
         }
     ]
