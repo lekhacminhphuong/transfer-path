@@ -62,3 +62,19 @@ const chem =
             "courses": ["PHYS121, 122 or PHYS114, 115 (8 credits)"]
         }
     ]
+
+const uxDesigner =
+    [
+        {
+        "name": "UX Designer",
+        "Skills:": ["Design methods/paradigms, User testing, User research, Communication"]
+        }
+    ]
+
+const dataScientist =
+    [
+        {
+        "name": "Data Scientist",
+        "Skills:": ["Programming, Statistics, Math, Visualization, Communication"]
+        }
+    ]

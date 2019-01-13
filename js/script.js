@@ -45,8 +45,8 @@ function drawChart() {
                 }
             },
             link: {
-                colorMode: 'solid',
-                colors: color1
+                colorMode: 'gradient',
+                colors: colors
             }
         },
         tooltip: { isHtml: true },
