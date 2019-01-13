@@ -11,15 +11,15 @@ function drawChart() {
     data.addColumn({ type: 'string', role: 'tooltip', 'p': { 'html': true } })
 
     data.addRows([
-        ['SCC', 'Informatics', 3, createCustomHTMLContent('Prerequisite Courses for Informatics', info)],
+        ['SCC', 'Informatics', 5, createCustomHTMLContent('Prerequisite Courses for Informatics', info)],
         ['SCC', 'Computer Science', 2, createCustomHTMLContent('Prerequisite Courses for Computer Science', cse)],
         ['SCC', 'Math', 2, createCustomHTMLContent('Prerequisite Courses for Mathematics', math)],
         ['SCC', 'Chemistry', 2, createCustomHTMLContent('Prerequisite Courses for Chemistry', chem)],
-        ['Informatics', 'UX Desginer', 1, 'Class: CSC142, STAT146, MATH152'],
-        ['Informatics', 'Data Analyst', 1, 'Class: CSC142, STAT146, MATH152'],
+        ['Informatics', 'UX Desginer', 1, createCustomHTMLContent('UX Designer Skills', uxDesigner)],
+        ['Informatics', 'Data Analyst', 1, "s"],
         ['Informatics', 'Project Manager', 1, 'Class: CSC142, STAT146, MATH152'],
         ['Informatics', 'Software Engineer', 1, 'Class: CSC142, STAT146, MATH152'],
-        ['Informatics', 'Data Scientist', 1, 'Class: CSC142, STAT146, MATH152'],
+        ['Informatics', 'Data Scientist', 1, createCustomHTMLContent('Data Scientist Skills', dataScientist)],
         ['Computer Science', 'Software Engineer', 1, 'Class: CSC142, STAT146, MATH152'],
         ['Computer Science', 'Data Scienctist', 1, 'Class: CSC142, STAT146, MATH152'],
         ['Math', 'Math Researcher', 1, 'Class: CSC142, STAT146, MATH152'],
@@ -73,7 +73,7 @@ createCustomHTMLContent = (heading, data) => {
 createList = (data) => {
     let list = ""
     data.map(item => {
-        list += "<li><b>" + item.name + "</b>: " + item.courses + "</li>"
+        list += "<li><b>" + item.name + "</b> " + item.courses + "</li>"
     })
     return list + "</ul>"
 }
