@@ -1,18 +1,3 @@
-const preReq =
-    [
-        {
-            "name": "Computer Programming",
-            "courses": ["CSE142 or CSE143"]
-        },
-        {
-            "name": "Statistics",
-            "courses": ["Stat 220"]
-        },
-        {
-            "name": "English Composition",
-             "courses": ["Engl&101"]
-        }
-    ]
 
 google.charts.load("current", { packages: ["sankey"] });
 google.charts.setOnLoadCallback(drawChart);
@@ -26,31 +11,28 @@ function drawChart() {
     data.addColumn({ type: 'string', role: 'tooltip', 'p': { 'html': true } })
 
     data.addRows([
-        ['SCC', 'Informatics', 3, createCustomHTMLContent('Prerequisite Courses', preReq)],
-        ['SCC', 'Computer Science', 2, 'Class: CSC142, STAT146, MATH152'],
-        ['SCC', 'Foster', 2, 'Class: CSC142, STAT146, MATH152'],
-        ['SCC', 'Math', 2, 'Class: CSC142, STAT146, MATH152'],
-        ['SCC', 'Chemistry', 2, 'Class: CSC142, STAT146, MATH152'],
+        ['SCC', 'Informatics', 3, createCustomHTMLContent('Prerequisite Courses for Informatics', info)],
+        ['SCC', 'Computer Science', 2, createCustomHTMLContent('Prerequisite Courses for Computer Science', cse)],
+        ['SCC', 'Math', 2, createCustomHTMLContent('Prerequisite Courses for Mathematics', math)],
+        ['SCC', 'Chemistry', 2, createCustomHTMLContent('Prerequisite Courses for Chemistry', chem)],
         ['Informatics', 'UX Desginer', 1, 'Class: CSC142, STAT146, MATH152'],
         ['Informatics', 'Data Analyst', 1, 'Class: CSC142, STAT146, MATH152'],
         ['Informatics', 'Project Manager', 1, 'Class: CSC142, STAT146, MATH152'],
         ['Computer Science', 'Software Engineer', 1, 'Class: CSC142, STAT146, MATH152'],
         ['Computer Science', 'Data Scienctist', 1, 'Class: CSC142, STAT146, MATH152'],
-        ['Foster', "Accountant", 1, 'Class: CSC142, STAT146, MATH152'],
-        ['Foster', "Maketing Manager", 1, 'Class: CSC142, STAT146, MATH152'],
         ['Math', 'Math Researcher', 1, 'Class: CSC142, STAT146, MATH152'],
         ['Math', 'Math Professor', 1, 'Class: CSC142, STAT146, MATH152'],
         ['Chemistry', 'Chemistry Researcher', 1, 'Class: CSC142, STAT146, MATH152'],
         ['Chemistry', 'Chemistry Professor', 1, 'Class: CSC142, STAT146, MATH152']
     ]);
     // Set Chart Color
-    var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
-        '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
+    var colors = ['red'];
     // Set chart options
     var options = {
         height: 700,
         sankey: {
             node: {
+                nodePadding: 40,
                 width: 20,
                 colors: colors,
                 label: {
