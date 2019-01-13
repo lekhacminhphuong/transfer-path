@@ -14,6 +14,7 @@ const preReq =
         }
     ]
 
+var chart;
 google.charts.load("current", { packages: ["sankey"] });
 google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
@@ -68,9 +69,31 @@ function drawChart() {
 
     };
     // Instantiate and draw our chart, passing in some options.
-    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
     chart.draw(data, options);
+    
+
+    // Add our over/out handlers.
+    google.visualization.events.addListener(chart, 'onmouseover', chartMouseOver);
+
+    google.visualization.events.addListener(chart, 'onmouseover', chartMouseOut);
+
+    google.visualization.events.addListener(chart, 'select', selectHandler);
+
 }
+
+chartMouseOver = (e) => {
+    chart.setSelection([e]);
+    // console.log(e)
+}
+chartMouseOut = (e) => {
+    chart.setSelection([{'row': null, 'column': null}]);
+}
+
+selectHandler = (e) => {
+    // alert('A table row was selected' + );
+  }
+
 
 createCustomHTMLContent = (heading, data) => {
     const toolTip = `<div class="card border-0">
