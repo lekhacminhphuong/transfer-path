@@ -59,23 +59,47 @@ const chem =
         },
         {
             "name": "English Composition",
-            "courses": ["PHYS121, 122 or PHYS114, 115 (8 credits)"]
+            "courses": ["PHYS121, 122 or PHYS114, 115"]
         }
     ]
 
 const uxDesigner =
     [
         {
-        "name": "UX Designer",
-        "courses:": ["Design methods/paradigms, User testing, User research, Communication"]
+            "name": "Design Methods",
+            "courses": ["  "]
+        },
+        {
+            "name": "User Testing",
+            "courses": ["  "]
+        },
+        {
+            "name": "User Research",
+            "courses": ["  "]
+        },
+        {
+            "name": "Communication",
+            "courses": ["  "]
         }
     ]
 
 const dataScientist =
-    [
+     [
         {
-        "name": "Data Scientist",
-        "courses:": ["Programming, Statistics, Math, Visualization, Communication"]
+            "name": "Programming",
+            "courses": ["  "]
+        },
+        {
+            "name": "Statistics",
+            "courses": ["  "]
+        },
+        {
+            "name": "Math",
+            "courses": ["  "]
+        },
+        {
+            "name": "Visualization",
+            "courses": ["  "]
         }
     ]
 
