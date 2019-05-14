@@ -12,3 +12,6 @@ Each member of our team is a transfer student, and we created this web applicati
 
 ### Transfer Path's Goals
 Our web app helps Seattle area transfer students with the process of deciding how to get “from here to there”, when deciding on a STEM related major and career direction, and the required prerequisites they need to take to get there.
+
+### Transfer Path's paper prototype
+![paper prototype](./img/paper-prototype.pdf)
