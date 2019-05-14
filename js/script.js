@@ -36,9 +36,6 @@ function drawChart() {
             interactivity: true,
         },
         tooltip: { isHtml: true },
-
-
-
     };
     // Instantiate and draw our chart, passing in some options.
     chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
@@ -60,10 +57,6 @@ chartMouseOver = (e) => {
 }
 chartMouseOut = (e) => {
     chart.setSelection([{ 'row': null, 'column': null }]);
-}
-
-selectHandler = (e) => {
-    // alert('A table row was selected' + );
 }
 
 
@@ -97,34 +90,30 @@ drawPath = () => {
     // Class List Tooltip
     data.addColumn({ type: 'string', role: 'tooltip', 'p': { 'html': true } })
 
-        data.addRows([
-            [collegeName, 'Informatics', 5, createCustomHTMLContent('Prerequisite Courses for Informatics', info)],
-            [collegeName, 'Computer Science', 2, createCustomHTMLContent('Prerequisite Courses for Computer Science', cse)],
-            [collegeName, 'Math', 2, createCustomHTMLContent('Prerequisite Courses for Mathematics', math)],
-            [collegeName, 'Chemistry', 2, createCustomHTMLContent('Prerequisite Courses for Chemistry', chem)],
-            ['Informatics', 'UX Desginer', 1, createCustomHTMLContent('UX Designer Skills', uxDesigner)],
-            ['Informatics', 'Data Analyst', 1, "s"],
-            ['Informatics', 'Project Manager', 1, 'Class: CSC142, STAT146, MATH152'],
-            ['Informatics', 'Software Engineer', 1, 'Class: CSC142, STAT146, MATH152'],
-            ['Informatics', 'Data Scientist', 1, createCustomHTMLContent('Data Scientist Skills', dataScientist)],
-            ['Computer Science', 'Software Engineer', 1, 'Class: CSC142, STAT146, MATH152'],
-            ['Computer Science', 'Data Scienctist', 1, 'Class: CSC142, STAT146, MATH152'],
-            ['Math', 'Math Researcher', 1, 'Class: CSC142, STAT146, MATH152'],
-            ['Math', 'Math Professor', 1, 'Class: CSC142, STAT146, MATH152'],
-            ['Chemistry', 'Chemistry Researcher', 1, 'Class: CSC142, STAT146, MATH152'],
-            ['Chemistry', 'Chemistry Professor', 1, 'Class: CSC142, STAT146, MATH152']
+    data.addRows([
+        [collegeName, 'Informatics', 5, createCustomHTMLContent('Prerequisite Courses for Informatics', info)],
+        [collegeName, 'Computer Science', 2, createCustomHTMLContent('Prerequisite Courses for Computer Science', cse)],
+        [collegeName, 'Math', 2, createCustomHTMLContent('Prerequisite Courses for Mathematics', math)],
+        [collegeName, 'Chemistry', 2, createCustomHTMLContent('Prerequisite Courses for Chemistry', chem)],
+        ['Informatics', 'UX Desginer', 1, createCustomHTMLContent('UX Designer Skills', uxDesigner)],
+        ['Informatics', 'Data Analyst', 1, createCustomHTMLContent('Data Analyst Skills', dataAnalyst)],
+        ['Informatics', 'Project Manager', 1, createCustomHTMLContent('Project Manager Skills', projectManager)],
+        ['Informatics', 'Software Engineer', 1, createCustomHTMLContent('Software Engineer Skills', softwareEngineer)],
+        ['Informatics', 'Data Scientist', 1, createCustomHTMLContent('Data Scientist Skills', dataScientist)],
+        ['Computer Science', 'Software Engineer', 1, createCustomHTMLContent('Software Engineer Skills', softwareEngineer)],
+        ['Computer Science', 'Data Scienctist', 1, createCustomHTMLContent('Data Scientist Skills', dataScientist)],
+        ['Math', 'Math Researcher', 1, 'Class: CSC142, STAT146, MATH152'],
+        ['Math', 'Math Professor', 1, 'Class: CSC142, STAT146, MATH152'],
+        ['Chemistry', 'Chemistry Researcher', 1, 'Class: CSC142, STAT146, MATH152'],
+        ['Chemistry', 'Chemistry Professor', 1, 'Class: CSC142, STAT146, MATH152']
     ]);
 }
 
 
 $(document).ready(function () {
     $('.dropdown-menu a.college').on("click", function (e) {
-        //   $(this).next('ul').toggle();
-        //   e.stopPropagation();
         e.preventDefault();
         collegeName = e.target.innerText;
-        console.log(collegeName)
-
         chart.clearChart()
         drawPath();
         chart.draw(data, options);

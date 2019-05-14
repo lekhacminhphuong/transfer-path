@@ -1,20 +1,30 @@
 .uw-purple{
-    background-color: rgb(51,0, 111);
-    color: white;
-}
-
-.highlight{
-    color: rgb(232,211,162);
+    background-color:#641E16  ;
+    color: #F2D7D5;
 }
 
 .nav-link-color{
-    color: white !important;
+    color:#F2D7D5!important;
+}
+
+#title {
+    font-size: 30px
+}
+
+.nav-link:hover {
+    text-decoration: overline
+}
+
+#dropdownMenuOffset {
+    color:#F2D7D5;
+    background:#641E16  
 }
  
 body{
-    background-color: #fafafa;
+    background-color:#F2D7D5;
 } 
 
-svg path:hover {
-    /* fill: red; */
+footer {
+    float: right;
 }
+

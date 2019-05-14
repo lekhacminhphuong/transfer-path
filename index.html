@@ -7,33 +7,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <title>Transfer Path</title>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light uw-purple">
-    <a class="navbar-brand nav-link-color" href="#">Home</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-      aria-expanded="false" aria-label="Toggle navigation">
+    <a id='title' class="navbar-brand nav-link-color" href="#">Transfer Path</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link nav-link-color" href="#">Get Started <span class="sr-only">(current)</span></a>
-        </li>
         <li class="nav-item">
           <a class="nav-link nav-link-color" href="#stem-majors">STEM Majors</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-color" href="#colleges">Colleges</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link-color white-text" href="#">About Us
-          </a>
+          <a class="nav-link nav-link-color" href="#colleges">University</a>
         </li>
       </ul>
     </div>
@@ -44,8 +37,6 @@
       <h1 class="display-4">Hello, Transfer Students!</h1>
       <p class="lead">We are here to inform transfer students on how to succesfully choose the correct major</p>
       <hr class="my-4">
-      <p class="highlight">"Be Boundless"</p>
-      <a class="btn btn-success btn-lg" href="#" role="button">Learn more</a>
     </div>
   </div>
 
@@ -57,8 +48,8 @@
         <div class="row">
           <div class="col-sm">
             <div class="dropdown mr-1">
-              <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+              <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                 College</button>
               <div class="dropdown-menu" id="college-dropdown" aria-labelledby="dropdownMenuOffset">
                 <a class="dropdown-item college" href="#">Central Seattle College</a>
@@ -69,8 +60,8 @@
           </div>
           <div class="col-sm">
             <div class="dropdown mr-2">
-              <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+              <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                 Major</button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
                 <a class="dropdown-item" href="#">Informatics</a>
@@ -80,12 +71,6 @@
                 <a class="dropdown-item" href="#">Chemistry</a>
               </div>
             </div>
-          </div>
-          <div class="col-sm">
-            <p class="card-text">Quick summary of college students transferring from community college to selected
-              school and majors.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
         <div class="row">
@@ -102,38 +87,41 @@
     <div class="row mt-5">
       <div class="col">
         <div class="card">
-
           <div class="card-body">
             <div class="card-title" id="stem-majors">
               <h1><strong>STEM Careers</strong></h1>
               <div class="row">
                 <div class="col-4">
                   <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-ux-desginer-list" data-toggle="list"
-                      href="#list-ux-desginer" role="tab" aria-controls="uxdesginer">UX Desginer</a>
+                    <a class="list-group-item list-group-item-action active" id="list-ux-desginer-list"
+                      data-toggle="list" href="#list-ux-desginer" role="tab" aria-controls="uxdesginer">UX Desginer</a>
                     <a class="list-group-item list-group-item-action" id="list-data-analyst-list" data-toggle="list"
                       href="#list-data-analyst" role="tab" aria-controls="dataanalyst">Data Analyst</a>
                     <a class="list-group-item list-group-item-action" id="list-project-manager-list" data-toggle="list"
                       href="#list-project-manager" role="tab" aria-controls="project-manager">Project Manager</a>
-                    <a class="list-group-item list-group-item-action" id="list-software-engineer-list" data-toggle="list"
-                      href="#list-software-engineer" role="tab" aria-controls="software-engineer">Software Engineer</a>
+                    <a class="list-group-item list-group-item-action" id="list-software-engineer-list"
+                      data-toggle="list" href="#list-software-engineer" role="tab"
+                      aria-controls="software-engineer">Software Engineer</a>
                     <a class="list-group-item list-group-item-action" id="list-data-scienctist-list" data-toggle="list"
                       href="#list-data-scienctist" role="tab" aria-controls="data-scienctist">Data Scientist</a>
                     <a class="list-group-item list-group-item-action" id="list-math-researcher-list" data-toggle="list"
                       href="#list-math-researcher" role="tab" aria-controls="math-researcher">Math Researcher</a>
                     <a class="list-group-item list-group-item-action" id="list-math-professor-list" data-toggle="list"
                       href="#list-math-professor" role="tab" aria-controls="math-professor">Math Professor</a>
-                    <a class="list-group-item list-group-item-action" id="list-chemistry-researcher-list" data-toggle="list"
-                      href="#list-chemistry-researcher" role="tab" aria-controls="chemistry-researcher">Chemistry
+                    <a class="list-group-item list-group-item-action" id="list-chemistry-researcher-list"
+                      data-toggle="list" href="#list-chemistry-researcher" role="tab"
+                      aria-controls="chemistry-researcher">Chemistry
                       Researcher</a>
-                    <a class="list-group-item list-group-item-action" id="list-chemistry-professor-list" data-toggle="list"
-                      href="#list-chemistry-professor" role="tab" aria-controls="chemistry-professor">Chemistry
+                    <a class="list-group-item list-group-item-action" id="list-chemistry-professor-list"
+                      data-toggle="list" href="#list-chemistry-professor" role="tab"
+                      aria-controls="chemistry-professor">Chemistry
                       Professor</a>
                   </div>
                 </div>
                 <div class="col-8">
                   <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="list-ux-desginer" role="tabpanel" aria-labelledby="list-ux-desginer-list">
+                    <div class="tab-pane fade show active" id="list-ux-desginer" role="tabpanel"
+                      aria-labelledby="list-ux-desginer-list">
                       <p><strong>Job Description:</strong></p>
                       The UX designer creates satisfying or compelling experiences for users of a product, often
                       drawing on results from user research and workflow analysis. Generally, UX designers need to
@@ -143,7 +131,8 @@
                       customer/technical support. <br></br>
                       <p class="text-right text-secondary"><small>roberthalf.com</small></p>
                     </div>
-                    <div class="tab-pane fade" id="list-data-analyst" role="tabpanel" aria-labelledby="list-data-analyst-list">
+                    <div class="tab-pane fade" id="list-data-analyst" role="tabpanel"
+                      aria-labelledby="list-data-analyst-list">
                       <p><strong>Job Description:</strong></p>
                       A Data Analyst interprets data and turns it into information which can offer ways to improve a
                       business, thus affecting business decisions. Data Analysts gather information from various
@@ -153,7 +142,8 @@
                       business/relevant colleagues.
                       <p class="text-right text-secondary"><small>roberthalf.com</small></p>
                     </div>
-                    <div class="tab-pane fade" id="list-project-manager" role="tabpanel" aria-labelledby="list-project-manager-list">
+                    <div class="tab-pane fade" id="list-project-manager" role="tabpanel"
+                      aria-labelledby="list-project-manager-list">
                       <p><strong>Job Description:</strong></p>
                       Project managers are the people in charge of a specific project or projects within a company. As
                       the project manager, your job is to plan, budget, oversee and document all aspects of the
@@ -165,7 +155,8 @@
                       2017.
                       <p class="text-right text-secondary"><small>study.com</small></p>
                     </div>
-                    <div class="tab-pane fade" id="list-software-engineer" role="tabpanel" aria-labelledby="list-software-engineer-list">
+                    <div class="tab-pane fade" id="list-software-engineer" role="tabpanel"
+                      aria-labelledby="list-software-engineer-list">
                       <p><strong>Job Description:</strong></p>Software developers/engineer are the creative minds
                       behind computer programs.
                       Some develop the applications that allow people to do specific tasks on a computer or another
@@ -176,7 +167,8 @@
                       The median annual wage for software developers, systems software was $107,600 in May 2017. <p
                         class="text-right text-secondary"><small>BLS(Bureau of Labor Statistics)</small></p>
                     </div>
-                    <div class="tab-pane fade" id="list-data-scienctist" role="tabpanel" aria-labelledby="list-data-scienctist-list">
+                    <div class="tab-pane fade" id="list-data-scienctist" role="tabpanel"
+                      aria-labelledby="list-data-scienctist-list">
                       <p><strong>Job Description:</strong></p>
                       Data scientists utilize their analytical statistical, and programming skills to collect, analyze,
                       and interpret large data sets. They then use this information to develop data-driven solutions to
@@ -186,7 +178,8 @@
                       <p class="text-right text-secondary"><small>Glassdoor</small></p>
 
                     </div>
-                    <div class="tab-pane fade" id="list-math-researcher" role="tabpanel" aria-labelledby="list-math-researcher-list">
+                    <div class="tab-pane fade" id="list-math-researcher" role="tabpanel"
+                      aria-labelledby="list-math-researcher-list">
                       <p><strong>Job Description</strong></p>
                       In the commercial domain, mathematicians are employed by companies which use statistics and
                       quantitative reasoning to predict business trends and future market developments, such as
@@ -205,7 +198,8 @@
                       papers each year, which help them to secure research grants and other forms of funding.
                       <p class="text-right text-secondary"><small>allaboutcareers.com</small></p>
                     </div>
-                    <div class="tab-pane fade" id="list-math-professor" role="tabpanel" aria-labelledby="list-math-professor-list">
+                    <div class="tab-pane fade" id="list-math-professor" role="tabpanel"
+                      aria-labelledby="list-math-professor-list">
                       <p><strong>Job Description:</strong></p>
                       Teaches courses in the discipline area of mathematics and statistics. Develops and designs
                       curriculum plans to foster student learning, stimulate class discussions, and ensures student
@@ -217,7 +211,8 @@
 
                       <p class="text-right text-secondary"><small>salary.com</small></p>
                     </div>
-                    <div class="tab-pane fade" id="list-chemistry-researcher" role="tabpanel" aria-labelledby="list-chemistry-researcher-list">
+                    <div class="tab-pane fade" id="list-chemistry-researcher" role="tabpanel"
+                      aria-labelledby="list-chemistry-researcher-list">
                       <p><strong>Job Description:</strong></p>
                       Research chemists create and improve processes and products, such as cosmetics, electronics and
                       drugs. Chemical compounds make up everything found in nature, and a research chemist examines
@@ -228,7 +223,8 @@
                       chemists utilize advanced lab equipment and computers to conduct their analyses.
                       <p class="text-right text-secondary"><small>roberthalf.com</small></p>
                     </div>
-                    <div class="tab-pane fade" id="list-chemistry-professor" role="tabpanel" aria-labelledby="list-chemistry-professor-list">
+                    <div class="tab-pane fade" id="list-chemistry-professor" role="tabpanel"
+                      aria-labelledby="list-chemistry-professor-list">
                       <p><strong>Job Description:</strong></p>
                       Teach courses pertaining to the chemical and physical properties and compositional changes of
                       substances. Work may include instruction in the methods of qualitative and quantitative chemical
@@ -237,75 +233,65 @@
                       <p><strong>Salary:</strong></p> The median annual wage for chemistry professor were $77,190 in
                       May 2017
                       <p class="text-right text-secondary"><small>BLS(Bureau of Labor Statistics)</small></p>
-
                     </div>
                   </div>
                 </div>
-
-
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
   </div>
 
   <!-------Campus Tab-->
   <div class="container mt-5">
-    <h1 id="colleges"><strong>Colleges</strong></h1>
+    <h1 id="colleges"><strong>University</strong></h1>
     <div class="card-deck">
       <div class="card">
-        <img src="http://www.southsoundtalk.com/wp-content/uploads/2017/12/uwt.jpg" class="card-img-top" alt="image of uw tacoma ">
+        <a href="https://www.tacoma.uw.edu/"><img src="http://www.southsoundtalk.com/wp-content/uploads/2017/12/uwt.jpg" class="card-img-top"
+          alt="image of uw tacoma"></a>
         <div class="card-body">
           <h5 class="card-title">University of Washington Tacoma</h5>
-          <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p> -->
         </div>
-        <!-- <div class="card-footer">
-        </div> -->
       </div>
       <div class="card">
-        <img src="https://static.seattletimes.com/wp-content/uploads/2017/07/6444f406-6365-11e7-9a1b-e72b021516bd-780x554.jpg" class="card-img-top" alt="Uw of uw seattle">
+        <a href="https://www.washington.edu/"><img
+          src="https://static.seattletimes.com/wp-content/uploads/2017/07/6444f406-6365-11e7-9a1b-e72b021516bd-780x554.jpg"
+          class="card-img-top" alt="uw seattle"></a>
         <div class="card-body">
           <h5 class="card-title">University of Washington Seattle</h5>
-          <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
         </div>
-        <!-- <div class="card-footer">
-        </div> -->
       </div>
       <div class="card">
-        <img src="https://borealist.com/wp-content/uploads/2018/08/masters-degree-in-history-bothell1.jpg" class="card-img-top" alt="image of uw bothell">
+        <a href="https://www.uwb.edu/"><img src="https://borealist.com/wp-content/uploads/2018/08/masters-degree-in-history-bothell1.jpg"
+          class="card-img-top" alt="image of uw bothell"></a>
         <div class="card-body">
           <h5 class="card-title">University of Washington Bothell</h5>
-          <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-            content. This card has even longer content than the first to show that equal height action.</p> -->
         </div>
-        <!-- <div class="card-footer">
-        </div> -->
       </div>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <footer>
+      <p>&copy; Copyright 2019 Transfer Path</p>
+    </footer>
 
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script src="js/data.js"></script>
-  <script src="js/script.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

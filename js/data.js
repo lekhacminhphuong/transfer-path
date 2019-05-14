@@ -1,19 +1,19 @@
 
 const info =
-[
-    {
-        "name": "Computer Programming",
-        "courses": ["CSE142 or CSE143"]
-    },
-    {
-        "name": "Statistics",
-        "courses": ["STAT220"]
-    },
-    {
-        "name": "English Composition",
-         "courses": ["ENGL&102"]
-    }
-]
+    [
+        {
+            "name": "Computer Programming",
+            "courses": ["CSE142 or CSE143"]
+        },
+        {
+            "name": "Statistics",
+            "courses": ["STAT220"]
+        },
+        {
+            "name": "English Composition",
+            "courses": ["ENGL&102"]
+        }
+    ]
 
 const cse =
     [
@@ -84,7 +84,7 @@ const uxDesigner =
     ]
 
 const dataScientist =
-     [
+    [
         {
             "name": "Programming",
             "courses": ["  "]
@@ -106,7 +106,59 @@ const dataScientist =
 const projectManager =
     [
         {
-        "name": "Project Manager",
-        "courses:": ["Leadership, Empathy, Communication, Planning, Problem Solving"]
+            "name": "Leadership",
+            "courses": [" "]
+        },
+        {
+            "name": "Communication",
+            "courses": [" "]
+        },
+        {
+            "name": "Planning",
+            "courses": [" "]
+        },
+        {
+            "name": "Problem Solving",
+            "courses": [" "]
+        }
+    ]
+
+    const dataAnalyst =
+    [
+        {
+            "name": "Understanding and designing database",
+            "courses": [" "]
+        },
+        {
+            "name": "Analyzing database",
+            "courses": [" "]
+        },
+        {
+            "name": "Programming",
+            "courses": [" "]
+        }
+    ]
+
+    const softwareEngineer =
+    [
+        {
+            "name": "Programming",
+            "courses": [" "]
+        },
+        {
+            "name": "Problem Solving",
+            "courses": [" "]
+        },
+        {
+            "name": "Logical thinking",
+            "courses": [" "]
+        },
+        {
+            "name": "Object-oriented design",
+            "courses": [" "]
+        },
+        {
+            "name": "Software testing and debugging",
+            "courses": [" "]
         }
     ]
